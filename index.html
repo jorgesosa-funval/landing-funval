@@ -40,51 +40,88 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
   <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
-
+  <!-- js File -->
+  <script src="./assets/js/script.js" defer type="module"></script>
 </head>
 
 <body id="top">
-  <div id="modal-container">
+  <!-- <div id="modal-container">
     <div id="modal">
-       
-      <button id="cerrar-modal">Cerrar</button>
-      <div class="course-card">
 
-        <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-          <img src='./assets/images/course-2.jpg' width="370" height="220" loading="lazy"
-            alt=${course.title} class="img-cover">
+      <button id="cerrar-modal">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </button>
+      <div class="course-card-details">
+
+        <figure class="card-banner">
+          <img src='https://picsum.photos/720/440' loading="lazy" alt=${course.title}>
         </figure>
 
-        <div class="abs-badge">
-          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        <div class="course-description">
+          <h2>Course Title</h2>
 
-          <span class="span">${course.duration}</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse deserunt culpa sapiente repudiandae debitis
+            voluptatibus aperiam laudantium distinctio dicta nisi animi molestiae, corporis, doloribus optio saepe
+            obcaecati dolores molestias.
+          </p>
+
+          <div class="description-list">
+            <div>
+              <h4>Modulos</h4>
+              <ul class="list-levels">
+                <li>
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                  <span>html, css, js</span>
+                </li>
+                <li>
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                  <span>NodeJS con Express y mysql</span>
+                </li>
+                <li>
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                  <span>Reactjs, Tailwind Css</span>
+                </li>
+                <li>
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                  <span>NodeJs</span>
+                </li>
+               
+              </ul>
+            </div>
+
+            <div>
+              <h4>Requisitos</h4>
+              <ul class="list-requirements">
+                <li>
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span>x horas lunes a viernes</span>
+                </li>
+                <li>
+                  <ion-icon name="laptop-outline"></ion-icon>
+                  <span>Smartphone o Laptop</span>
+                </li>
+                <li>
+                  <ion-icon name="wifi-outline"></ion-icon>
+                  <span>Buena conexion a internet</span>
+                </li>
+                <li>
+                  <ion-icon name="accessibility-outline"></ion-icon>
+                  <span>x hrs de servicio por Nivel</span>
+                </li>
+              </ul>
+            </div>
+
+
+
+          </div>
+
         </div>
-
-        <div class="card-content">
-
-          <span class="badge">Beginner</span>
-          <ul class="card-meta-list">
-
-            <li class="card-meta-item">
-              <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-              <span class="span">${course.modules}</span>
-            </li>
-
-          </ul>
-          <h3 class="h3">
-            <a href="#" class="card-title">${course.title}</a>
-          </h3>
-          
-          <data class="price" value=${course.price}>${course.price}</data>
-        </div>
-        
 
       </div>
     </div>
-  </div>
-  
+  </div> -->
+
   <!-- 
     - #HEADER
   -->
@@ -265,31 +302,6 @@
         </div>
       </section>
 
-      <!-- Vision -->
-
-      <!--        <section class="section vision" aria-label="vision">
-        <div class="container">
-
-          <figure>
-            <img src="./assets/images/vision.jpg" width="450" height="590" loading="lazy" alt="about banner"
-              class="w-100 about-img">
-          </figure>
-
-          <p>
-
-            En Funval, nos dedicamos a garantizar que nuestros egresados no solo adquieran habilidades profesionales,
-            sino también valores sólidos y hábitos positivos. Creemos en una educación integral que prepara a los
-            individuos para el éxito profesional y los impulsa a ser ciudadanos responsables y contribuyentes en la
-            sociedad.
-          </p>
-
-        </div>
-      </section> -->
-
-
-      <!-- 
-        - #COURSE
-      -->
 
       <section class="section course" id="courses" aria-label="course">
         <div class="container">
@@ -741,7 +753,7 @@
     </div>
 
   </footer>
- 
+
   <!-- 
     - #BACK TO TOP
   -->
@@ -750,10 +762,8 @@
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
   </a>
 
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js" defer></script>
+ 
+  
 
   <!-- 
     - ionicon link

@@ -1,0 +1,212 @@
+:root {
+    --green-vogue-50: #f1f8fe;
+    --green-vogue-100: #e3eefb;
+    --green-vogue-200: #c0def7;
+    --green-vogue-300: #88c3f1;
+    --green-vogue-400: #49a4e7;
+    --green-vogue-500: #2189d6;
+    --green-vogue-600: #136bb6;
+    --green-vogue-700: #115693;
+    --green-vogue-800: #124a7a;
+    --green-vogue-900: #153f65;
+    --green-vogue-950: #113153;
+
+
+    --ff-league_spartan: 'League Spartan', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--ff-poppins);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--gray-web);
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.course-title {
+    height: 320px;
+    width: 100%;
+    background-color: var(--green-vogue-600);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.course-title h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    padding-inline: 2rem;
+    padding-block-end: 1rem;
+}
+
+.course-title figure {
+    width: 60px;
+    height: 60px;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.first-item-description {
+  
+    padding-block: 6rem;
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    padding-inline: 3rem;
+
+}
+
+.first-item-description figure {
+    width: 140px;
+    height: 140px;
+    float: left;
+    margin-right: 1rem;
+}
+
+.second-item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-block-end: 2rem;
+    overflow: hidden;
+}
+ 
+.second-item-description figure{
+    aspect-ratio: auto 1104/608;
+}
+
+.second-item-description figure:nth-child(1) {
+    width: 80%;
+    min-height: 213px;
+    height: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.second-item-description figure:nth-child(2) {
+    width: 42%;
+    min-width: 250px;
+    min-height: 149px;
+    flex-shrink: 0;
+    overflow: hidden;
+    align-self: flex-end;
+}
+
+.course-reasons {
+    padding-block-end: 2.5rem;
+    width: 100%;
+    
+}
+
+.course-reasons .why {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-inline: 3rem;
+}
+
+.course-reasons .why h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    padding-block: 2rem;
+}
+
+.course-reasons .why p {
+    font-size: 1.4rem;
+    font-weight: normal;
+    padding-block: 2rem;
+}
+
+.course-reasons .potencial {
+   
+    padding-block-start: 6rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.course-reasons .potencial h2,
+.program-requirements h2 {
+
+    font-size: 3rem;
+    font-weight: normal;
+    padding-block-start: 2rem;
+}
+
+.course-reasons .potencial figure {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+.potencial-container{
+    padding-inline: 3rem;
+}
+.course-reasons .potencial-container ul,
+.program-requirements ul {
+    padding-block-start: .5rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline-start: 2.2rem;
+    
+}
+
+.program-requirements {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-inline: 3rem;
+    background-color: var(--green-vogue-100);
+}
+
+.program-requirements ul {
+    padding-block-end: 4rem;
+}
+
+/* @media (max-width: 992px) {
+
+    .second-item-description figure:nth-child(1) {
+        width: 50%;
+        min-width: 260px;
+    }
+
+} */
+
+/* @media (max-width: 575px) {
+    
+    .course-title h1{
+        text-align: center;
+        font-size: 2.4rem;
+        padding-inline: 2.4rem;
+        padding-block-end: 1rem;
+    }
+    
+    .second-item-description{
+        flex-direction: column;
+        align-items: unset;
+    }
+    .second-item-description figure:nth-child(1){
+        width: 68%;
+    }
+    .second-item-description figure:nth-child(2) {
+        width: 50%;
+        align-self: flex-end;
+    }
+} */
