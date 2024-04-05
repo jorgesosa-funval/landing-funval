@@ -25,40 +25,40 @@ function setDomCourseCard() {
   courses.forEach(course => {
     const courseCard = `  
     <li>
-      <div class="course-card">
+      <a href="${course.link}">
+        <div class="course-card">
 
-        <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-          <img src=${course.img} width="370" height="220" loading="lazy"
-            alt=${course.title} class="img-cover">
-        </figure>
+          <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+            <img src=${course.img} width="370" height="220" loading="lazy"
+              alt=${course.title} class="img-cover">
+          </figure>
 
-        <div class="abs-badge">
-          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          <div class="abs-badge">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-          <span class="span">${course.duration}</span>
+            <span class="span">${course.duration}</span>
+          </div>
+
+          <div class="card-content">
+
+            <span class="badge">Beginner</span>
+            <ul class="card-meta-list">
+
+              <li class="card-meta-item">
+                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">${course.modules}</span>
+              </li>
+
+            </ul>
+            <h3 class="h3 card-title">
+               ${course.title} 
+            </h3>
+            
+            <data class="price" value=${course.price}>${course.price}</data>
+          </div>
         </div>
-
-        <div class="card-content">
-
-          <span class="badge">Beginner</span>
-          <ul class="card-meta-list">
-
-            <li class="card-meta-item">
-              <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-              <span class="span">${course.modules}</span>
-            </li>
-
-          </ul>
-          <h3 class="h3">
-            <a href="${course.link}" class="card-title">${course.title}</a>
-          </h3>
-          
-          <data class="price" value=${course.price}>${course.price}</data>
-        </div>
-        
-
-      </div>
+      </a>
     </li>        
       `
     document.querySelector('.grid-list').innerHTML += courseCard
@@ -108,8 +108,6 @@ const closeNavbar = function () {
 }
 
 addEventOnElem(navLinks, "click", closeNavbar);
-
-
 
 /**
  * header active when scroll down to 100px

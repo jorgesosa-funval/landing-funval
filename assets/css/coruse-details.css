@@ -209,7 +209,15 @@ figure img {
 }
 
 @media (min-width: 992px) {
-    
+ /*    .first-item-description{
+        display: flex;
+    }
+    .first-item-description  figure{
+         flex-shrink: 0;
+    }*/
+    .second-item-description{
+        padding-block-start: 0;
+    } 
     .second-item-description figure:nth-child(1) {
         width: 58%;
         min-height: 213px;
