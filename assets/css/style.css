@@ -791,6 +791,11 @@ body {
   animation: pulse 3s ease infinite;
 }
 
+.video-banner iframe{
+  width: 100%;
+  aspect-ratio: 7/4;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 var(--white_50);
@@ -1167,7 +1172,10 @@ body {
     padding: 25px;
   }
 
-
+ /*  .video-banner iframe{
+    width: 100%;
+    aspect-ratio: 7/4;
+  } */
 
   /**
    * STATS
@@ -1343,6 +1351,7 @@ body {
     padding-block: 10px;
   }
 
+  
 }
 
 
